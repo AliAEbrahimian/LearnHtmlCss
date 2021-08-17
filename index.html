@@ -11,6 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
 <script src="assets/js/vendor/jquery.min.js"></script>
 <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><![endif]-->
 </head>
@@ -20,17 +21,42 @@
 	<div class="container">
 		<div class="row aling-items-center">
 			<div class="col-lg-5">
-				<p>lorem</p>
+				<a href="#"><img src="//via.placeholder.com/600x250" alt="Logo" height="250" width="300"></a>
 			</div>
-			<div class="col-lg-7">
-				nav
-			</div>
+			<nav id="navigation" class="col-lg-7">
+				<ul class="menu mb-4">
+					<li><a href="#">صفحه اصلی</a></li>
+					<li><a href="#">جدیدترین ها</a></li>
+					<li><a href="#">البوم ها</a></li>
+					<li><a href="#">ارتباط با ما</a></li>
+				</ul>
+				<form action="#" id="searchform" class="input-group">
+					<input type="search" class="form-control" placeholder="جست و جو">
+					<button type="submit"><i class="material-icons text-primary">search</i></button>
+				</form>
+			</nav>
 		</div>
 	</div>
 </header>
 
-<main id="siteBody">
-</main>
+<div class="container">
+	<div class="row">
+		<aside id="sidebar" class="col-lg-4">
+			<section class="widget boxstyle">
+				<h4 class="widget-title">دسته بندی ها</h4>
+				<ul class="categories">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</section>
+		</aside>
+		<main id="siteBody" class="col-lg-8">
+
+		</main>
+	</div>
+</div>
 
 <footer id="siteFoot">
 </footer>

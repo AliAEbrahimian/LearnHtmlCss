@@ -1,3 +1,9 @@
+.boxstyle{
+	background-color: $box-background;
+	border-radius: $border-radius;
+	box-shadow: 0px 2px 3px 0px rgba(1,1,0,0.23);
+}
+
 .pagination{
 	display: flex;
 	margin-top: 3rem;
