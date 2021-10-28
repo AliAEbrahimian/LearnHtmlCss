@@ -1,2 +1,68 @@
 #siteHead{
+    padding-top: 20px;
+    &:after{
+        content: '';
+        height: 5px;
+        display: block;
+        border-top: 1px dashed $border-color;
+        border-bottom: 1px dashed $border-color;
+    }
+
+    #logohead{
+        border-radius: $border-radius;
+        width: 450;
+        height: 100;
+    }
+
+    .menu{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style: none;
+        > li {
+            &:not(:last-child){
+                padding-left: 20px;
+                margin-left: 25px;
+                border-left: 1px $border-color solid;
+            }
+
+            &:hover{
+                color: map-get( $colors , 'primary' );
+                transition: all 0.3s linear;
+            }
+        }
+    }
+
+    // .buttonmenu{
+    //     border: none;
+    //     border-radius: $border-radius;
+    //     background: map-get($colors, 'primary');
+    //     color: white;
+        
+    // }
+
+    #searchform{
+        display: flex;
+        padding: 15px;
+        background: $border-color;
+        border-radius: $border-radius;
+        button,input{
+            > i {
+                padding: 0;
+                margin: 0;
+            }
+            background: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            box-shadow: none !important;
+        }
+        
+        &:focus-within{
+            transition: all 0.3 linear;
+            box-shadow: 0px 2px 3px 0px rgba($color: black, $alpha: 0.5);
+        }
+    }
+
+
 }
