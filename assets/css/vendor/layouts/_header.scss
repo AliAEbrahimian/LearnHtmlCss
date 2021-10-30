@@ -2,6 +2,7 @@
     padding-top: 20px;
     &:after{
         content: '';
+        margin-top: 10px;;
         height: 5px;
         display: block;
         border-top: 1px dashed $border-color;
@@ -33,14 +34,6 @@
         }
     }
 
-    // .buttonmenu{
-    //     border: none;
-    //     border-radius: $border-radius;
-    //     background: map-get($colors, 'primary');
-    //     color: white;
-        
-    // }
-
     #searchform{
         display: flex;
         padding: 15px;
@@ -60,5 +53,11 @@
         }
     }
 
-
+    // .buttonmenu{
+    //     border: none;
+    //     border-radius: $border-radius;
+    //     background: map-get($colors, 'primary');
+    //     color: white;
+        
+    // }
 }
