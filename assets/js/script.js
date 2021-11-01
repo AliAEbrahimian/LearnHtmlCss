@@ -38,6 +38,7 @@ requirejs(['bootstrap'], function($){
 				});
 			});
 		}
+
 		
 		function initjsFuncs(){
 			const lazyImages = document.querySelectorAll('[data-src]');
@@ -56,6 +57,16 @@ requirejs(['bootstrap'], function($){
 		}
 		
 		initjsFuncs();
+		
+		$('.categories > li > ul').slideUp(0);
+
+		$('.categories > li > a').click(function(e){
+			e.preventDefault();
+			if( $(this).parent().has('ul').length ){
+				$(this).parent().find('ul').slideToggle();
+			}
+		})
+
 
 		/*
 		Ajax Template
